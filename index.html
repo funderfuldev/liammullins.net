@@ -3,6 +3,23 @@
 
 <body>
 
+<script>
+    var counter = 1;
+
+</script>
+
+<h1 id="tracker">count: </h1>
+
+<script>
+    function inc()
+    {
+        counter++;
+        document.getElementById("tracker").innerHTML = "count: " + counter;
+    }
+</script>
+
+<button onclick="inc()">INCREASE</button>
+
 </body>
 
 </html>
