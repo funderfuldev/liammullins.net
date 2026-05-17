@@ -41,17 +41,21 @@
 }
 
 .titleLoremIpsum {
+  display: block;
   position: absolute;
-  left: -20px;
-  top: -10px; 
-  width: 95vw; 
-  height: max-content;
+  top: -10vw;
+  left: -2vw;
+  
+  width: 95vw;
   font-size: 1vw;
-  line-height: 75%;
   font-family: 'Georgia';
-  color: var(--lorem-ipsum-color);
+  font-weight: 100;
+  letter-spacing: -0.05em;
+  line-height: 75%;
+  text-align: justify;
+  color: var(--dot-default-color);
   user-select: none;
-  pointer-events: none;
+  z-index: -10;
 }
 
 
