@@ -1,6 +1,8 @@
 
 import './App.css'
 
+import {motion} from "motion/react"
+
 function App() 
 {
   const randomTextChoices = [
@@ -27,7 +29,10 @@ function App()
 
         <div className='title'>
 
-          <b>liammullins<span className='dot'></span>net</b>
+          <b>liammullins<motion.span 
+          whileHover={{scale: 2, rotateZ: -4}}
+          whileTap={{scale: 1.5}}
+          className='dot'></motion.span>net</b>
 
           <div className='randomText'>
             {randomTextChoice}
