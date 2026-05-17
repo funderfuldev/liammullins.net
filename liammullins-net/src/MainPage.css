@@ -19,7 +19,8 @@
   width: max-content;
   font-size: 14vw;
   font-family: 'Helvetica';
-  letter-spacing: -0.1em;
+  font-weight: 900;
+  letter-spacing: -0.105em;
   text-align: left;
   user-select: none;
 }
@@ -31,7 +32,7 @@
   display: inline-block;
   width: 2vw;
   height: 2vw;
-  margin-left: 0.9vw;
+  margin-left: 1vw;
   margin-right: -0.6vw;
   background-color: var(--dot-default-color);
   transform-origin: center;
@@ -43,7 +44,7 @@
   position: absolute;
   left: -20px;
   top: -10px; 
-  width: 80vw; 
+  width: 95vw; 
   height: max-content;
   font-size: 1vw;
   line-height: 75%;
@@ -57,15 +58,36 @@
 .randomText {
   display: block;
   position: absolute;
-  bottom: 1vw;
-  right: -1.5vw;
+  bottom: 2.2vw;
+  right: -1vw;
   
   width: max-content;
   font-size: 2vw;
   font-family: 'Georgia';
+  font-weight: 100;
   letter-spacing: -0.05em;
   text-align: right;
   color: var(--dot-default-color);
   user-select: none;
 }
 
+.pageList 
+{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: max-content;
+  gap: 2vw;
+  left: 2vw;
+  bottom: -10vw;
+}
+
+.pageList button
+{
+  font-size: 2vw;
+  border: none;
+  background-color: transparent;
+  font-family: 'Georgia';
+  letter-spacing: -0.05em;
+  cursor: pointer;
+}

@@ -1,15 +1,15 @@
 
-import './App.css'
+import './MainPage.css'
 
 import {motion} from "motion/react"
 
-function App() 
+function MainPage() 
 {
   const randomTextChoices = [
-    "More is actually more....?",
-    "Contrast is everything......",
-    "Words words, words........",
-    "Game feel is an illusion...."
+    "More is actually more...........?",
+    "Contrast is everything.............",
+    "Words words, words...............",
+    "Game feel is an illusion..........."
   ];
 
   const randomTextChoice = randomTextChoices[Math.floor(Math.random() * randomTextChoices.length)];
@@ -28,25 +28,32 @@ function App()
         </span>
 
         <div className='title'>
-
-          <b>liammullins
+          {/*title*/}
+          liammullins
           
           <motion.span 
           whileHover={{scale: 2, rotateZ: -4, transition: {type: "spring", duration: 0.2}}}
           whileTap={{scale: 1.8, rotateZ: 0, transition: {type: "spring", duration: 0.2}}}
-          className='dot'
-          onClick={() => alert("You found me!")}>
+          className='dot'>
           </motion.span>
           
-          net</b>
+          net
 
           <div className='randomText'>
             {randomTextChoice}
           </div>
+
+          <div className='pageList'>
+            <button>work</button>
+            <button>about</button>
+            <button>contact</button>
+          </div>
         </div>
+
+        
       </div>
     </>
   )
 }
 
-export default App
+export default MainPage
