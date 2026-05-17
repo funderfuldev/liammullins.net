@@ -29,10 +29,16 @@ function App()
 
         <div className='title'>
 
-          <b>liammullins<motion.span 
-          whileHover={{scale: 2, rotateZ: -4}}
-          whileTap={{scale: 1.5}}
-          className='dot'></motion.span>net</b>
+          <b>liammullins
+          
+          <motion.span 
+          whileHover={{scale: 2, rotateZ: -4, transition: {type: "spring", duration: 0.2}}}
+          whileTap={{scale: 1.8, rotateZ: 0, transition: {type: "spring", duration: 0.2}}}
+          className='dot'
+          onClick={() => alert("You found me!")}>
+          </motion.span>
+          
+          net</b>
 
           <div className='randomText'>
             {randomTextChoice}
