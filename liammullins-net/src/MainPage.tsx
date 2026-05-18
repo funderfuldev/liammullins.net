@@ -1,6 +1,7 @@
 
-import './MainPage.css'
+import './MainPage.css';
 
+import {useState} from 'react';
 import {motion} from "motion/react";
 
 function MainPage() 
@@ -14,11 +15,14 @@ function MainPage()
 
   const randomTextChoice = RANDOMTEXTCHOICES[Math.floor(Math.random() * RANDOMTEXTCHOICES.length)];
 
-  const TABS = [
+  const PAGES = [
     "work",
     "about",
     "contact"
   ];
+
+  const [selectedPage, setSelectedPage] = useState(PAGES[0]);
+
 
   return (
     <>
@@ -52,9 +56,21 @@ function MainPage()
           </div>
 
           <div className='pageList' id='pageList'>
-            <button>work</button>
-            <button>about</button>
-            <button>contact</button>
+            {PAGES.map((page) => (
+              <motion.button
+              key={page}
+              whileHover={{x: 20, transition: {duration: 0.2}}}
+              whileTap={{scaleX: 1.1, scaleY: 0.9, transition: {duration: 0.1}}}
+              onClick={() => setSelectedPage(page)}
+              className='pageButtonSelected'
+              animate={{color: page === selectedPage ? 'white' : 'black',
+                backgroundColor: page === selectedPage ? 'black' : 'white',
+                transition: {duration: 0.5}
+              }}
+              >
+              {page}
+              </motion.button>
+            ))}
           </div>
         </div>
 

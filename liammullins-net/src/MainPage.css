@@ -89,19 +89,38 @@
 
 }
 
-.pageList button
+.pageButtonSelected
 {
   font-size: 2vw;
-  border: none;
   padding-right: 1vw;
   padding-bottom: 0.2vw;
   padding-left: 200%;
   font-family: 'Georgia';
-  color: white;
-  background-color: black;
+  color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: black;
+  border-width: 0.15cap;
+  background-color: rgb(0, 0, 0);
   letter-spacing: -0.05em;
   cursor: pointer;
 }
+
+.pageButton
+{
+  font-size: 2vw;
+  padding-right: 1vw;
+  padding-bottom: 0.2vw;
+  padding-left: 200%;
+  font-family: 'Georgia';
+  color: rgb(0, 0, 0);
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 0.15cap;
+  background-color: rgb(255, 255, 255);
+  letter-spacing: -0.05em;
+  cursor: pointer;
+}
+
 
 @media only screen and (max-width: 767px)
 {
