@@ -26,11 +26,9 @@ function MainPage()
 
   return (
     <>
+
       <div className='rotation'>
         {/* main div for rotation */}
-
-        
-
         <div className='title'>
 
           <span className='titleLoremIpsum'>
@@ -60,11 +58,11 @@ function MainPage()
               <motion.button
               key={page}
               whileHover={{x: 20, transition: {duration: 0.2}}}
-              whileTap={{scaleX: 1.1, scaleY: 0.9, transition: {duration: 0.1}}}
+              whileTap={{scaleX: 1.1, scaleY: 0.75, x: 25, rotateZ: 3, transition: {duration: 0.05}}}
               onClick={() => setSelectedPage(page)}
               className='pageButtonSelected'
-              animate={{color: page === selectedPage ? 'white' : 'black',
-                backgroundColor: page === selectedPage ? 'black' : 'white',
+              animate={{color: page === selectedPage ? 'white' : 'white',
+                backgroundColor: page === selectedPage ? 'black' : 'var(--dot-default-color)',
                 transition: {duration: 0.5}
               }}
               >
