@@ -1,8 +1,9 @@
 
 import './MainPage.css';
 
-import {useState} from 'react';
 import {motion} from "motion/react";
+
+import PageList from "./PageList.tsx";
 
 function MainPage() 
 {
@@ -15,13 +16,7 @@ function MainPage()
 
   const randomTextChoice = RANDOMTEXTCHOICES[Math.floor(Math.random() * RANDOMTEXTCHOICES.length)];
 
-  const PAGES = [
-    "work",
-    "about",
-    "contact"
-  ];
-
-  const [selectedPage, setSelectedPage] = useState(PAGES[0]);
+  
 
 
   return (
@@ -53,23 +48,10 @@ function MainPage()
             {randomTextChoice}
           </div>
 
-          <div className='pageList' id='pageList'>
-            {PAGES.map((page) => (
-              <motion.button
-              key={page}
-              whileHover={{x: 20, transition: {duration: 0.2}}}
-              whileTap={{scaleX: 1.1, scaleY: 0.75, x: 25, rotateZ: 3, transition: {duration: 0.05}}}
-              onClick={() => setSelectedPage(page)}
-              className='pageButtonSelected'
-              animate={{color: page === selectedPage ? 'white' : 'white',
-                backgroundColor: page === selectedPage ? 'black' : 'var(--dot-default-color)',
-                transition: {duration: 0.5}
-              }}
-              >
-              {page}
-              </motion.button>
-            ))}
-          </div>
+        <PageList>
+          
+        </PageList>
+          
         </div>
 
         
