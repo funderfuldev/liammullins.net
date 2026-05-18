@@ -79,19 +79,34 @@
 {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
   position: absolute;
   width: max-content;
-  gap: 2vw;
-  left: 2vw;
-  bottom: -10vw;
+  gap: 0.5vw;
+  right: 79.5vw;
+  top: 16vw;
+
 }
 
 .pageList button
 {
   font-size: 2vw;
   border: none;
-  background-color: transparent;
+  padding-right: 1vw;
+  padding-bottom: 0.2vw;
+  padding-left: 200%;
   font-family: 'Georgia';
+  color: white;
+  background-color: black;
   letter-spacing: -0.05em;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 767px)
+{
+  .pageList button
+  {
+    font-size: 4vw;
+  }
 }

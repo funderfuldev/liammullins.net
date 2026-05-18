@@ -1,19 +1,24 @@
 
 import './MainPage.css'
 
-import {motion} from "motion/react"
+import {motion} from "motion/react";
 
 function MainPage() 
 {
-  const randomTextChoices = [
+  const RANDOMTEXTCHOICES = [
     "More is actually more.............",
     "Contrast is everything.............",
     "Words words, words...............",
     "Game feel is an illusion..........."
   ];
 
-  const randomTextChoice = randomTextChoices[Math.floor(Math.random() * randomTextChoices.length)];
+  const randomTextChoice = RANDOMTEXTCHOICES[Math.floor(Math.random() * RANDOMTEXTCHOICES.length)];
 
+  const TABS = [
+    "work",
+    "about",
+    "contact"
+  ];
 
   return (
     <>
@@ -46,7 +51,7 @@ function MainPage()
             {randomTextChoice}
           </div>
 
-          <div className='pageList'>
+          <div className='pageList' id='pageList'>
             <button>work</button>
             <button>about</button>
             <button>contact</button>
@@ -55,6 +60,7 @@ function MainPage()
 
         
       </div>
+
     </>
   )
 }
