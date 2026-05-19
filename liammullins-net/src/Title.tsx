@@ -1,5 +1,5 @@
 
-import './MainPage.css';
+import './Header.css';
 import {motion} from 'motion/react';
 
 

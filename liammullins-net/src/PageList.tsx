@@ -1,6 +1,6 @@
 
 
-import './MainPage.css';
+import './Header.css';
 import {useState, useEffect} from "react";
 import {motion} from "motion/react";
 
