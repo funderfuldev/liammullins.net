@@ -36,18 +36,25 @@ function MainPage()
 
         <div className='footer'>
           <div className='footerLinks'>
-            <img src={GithubLogo} alt='Github' className='icon'/>
-            <img src={TwitterLogo} alt='Twitter (X The Everything App)' className='icon'/>
-            <img src={EmailLogo} alt='Email' className='icon'/>
+            <motion.img 
+            whileHover={{scale: 2, rotateZ: -4}}
+            src={GithubLogo} alt='Github' className='githubIcon'/>
+            <motion.img 
+            whileHover={{scale: 2}}
+            src={TwitterLogo} alt='Twitter (X The Everything App)' className='twitterIcon'/>
+            <motion.img 
+            whileHover={{scale: 2, rotateZ: 4}}
+            src={EmailLogo} alt='Email' className='emailIcon'/>
           </div>
           <p><motion.a 
-          whileHover={{color: 'white', scale: 1.1}}
-          animate={{scale: 1}}
+          whileHover={{scale: 1.05, y: -2}}
+          animate={{scale: 1, rotateZ: 0}}
           href='https://liammullins.net'><u>liammullins.net</u></motion.a> was entirely designed and hand-coded by yours truly in <motion.a 
-          whileHover={{color: 'white', scale: 1.1}}
-          animate={{scale: 1}}
+          whileHover={{scale: 1.05, y: -2}}
+          animate={{scale: 1, rotateZ: 0}}
           href='https://react.dev'><u>React.</u></motion.a>
           </p>
+          <p>&copy; Liam Mullins 2026-present. All rights reserved.</p>
           
         </div>
       </div>
