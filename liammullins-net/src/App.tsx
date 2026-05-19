@@ -2,23 +2,25 @@
 import Header from './Header.tsx';
 import Footer from './Footer.tsx';
 
-function App() 
+import { Outlet } from 'react-router';
+
+export default function App() 
 {
   return (
     <>
       <div className='wrapper'>
 
         <Header/>
+
         <div className='pageContent'>
           <div className='spacer'/>
           <div className='pageContainer'>
-            Test
+            <Outlet/>
           </div>
         </div>
+
         <Footer/>
       </div>
     </>
   )
 }
-
-export default App

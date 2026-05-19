@@ -2,18 +2,34 @@
 
 import './Header.css';
 import {useState, useEffect} from "react";
+import { useNavigate, useLocation} from 'react-router';
 import {motion} from "motion/react";
 
 export default function PageList() {
 
     const PAGES = [
-    {key: 1, name: "work", description: "design,   prints,   games"},
-    {key: 2, name: "about", description: "bio, artist statement"},
-    {key:3, name: "contact", description: "email, socials, cv"},
-    {key: 4, name: "blog", description: ""}
+    {key: 1, name: "work", description: "design,   prints,   games", link: "/"},
+    {key: 2, name: "about", description: "bio, artist statement", link: "/about"},
+    {key:3, name: "contact", description: "email, socials, cv", link: "/contact"}
   ];
 
+  let navigate = useNavigate();
+  let location = useLocation();
+
+  const getCurrentPage = () => {
+    return PAGES.find(p => p.link === location.pathname) || PAGES[0];
+  }
+
   const [selectedPage, setSelectedPage] = useState(PAGES[0]);
+
+  useEffect(() => {
+    setSelectedPage(getCurrentPage());
+  }, [location.pathname]);
+
+  const handlePageClick = (page : any) => {
+    setSelectedPage(page);
+    navigate(page.link);
+  }
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -40,7 +56,7 @@ export default function PageList() {
             key={page.key}
             whileHover={{ x: '2.7vw', transition: { duration: 0.2 } }}
             whileTap={{ scaleX: 1.1, scaleY: 0.9, x: '4vw', rotateZ: -1, transition: { type: 'spring', stiffness: 1000, damping: 35, mass: 2 } }}
-            onClick={() => setSelectedPage(page)}
+            onClick={() => {handlePageClick(page);}}
             className='pageButton'
             initial=
             {{backgroundColor: isSelected ? 'black' : 'var(--dot-default-color)',
@@ -52,7 +68,6 @@ export default function PageList() {
             transition={{ type: 'spring', stiffness: 1000, damping: 50, mass: 2 }}
           >
             {page.name}
-            
             <motion.p 
               className='pageButtonDescription'
               animate={{ 
