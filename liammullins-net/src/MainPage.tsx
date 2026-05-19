@@ -1,7 +1,10 @@
 
 import './MainPage.css';
+import TwitterLogo from './assets/twitter.svg';
+import EmailLogo from './assets/email.svg';
+import GithubLogo from './assets/github.svg';
 
-import {motion} from "motion/react";
+import {motion, vw} from "motion/react";
 
 import Title from "./Title.tsx";
 import PageList from "./PageList.tsx";
@@ -32,11 +35,20 @@ function MainPage()
         <div className='pageContent'></div>
 
         <div className='footer'>
+          <div className='footerLinks'>
+            <img src={GithubLogo} alt='Github' className='icon'/>
+            <img src={TwitterLogo} alt='Twitter (X The Everything App)' className='icon'/>
+            <img src={EmailLogo} alt='Email' className='icon'/>
+          </div>
           <p><motion.a 
-          whileHover={{color: 'white', scale: 1.2}}
-          href='https://liammullins.net'><u>liammullins.net</u></motion.a> was entirely designed and hand-coded by yours truly in React.
+          whileHover={{color: 'white', scale: 1.1}}
+          animate={{scale: 1}}
+          href='https://liammullins.net'><u>liammullins.net</u></motion.a> was entirely designed and hand-coded by yours truly in <motion.a 
+          whileHover={{color: 'white', scale: 1.1}}
+          animate={{scale: 1}}
+          href='https://react.dev'><u>React.</u></motion.a>
           </p>
-          <div></div>
+          
         </div>
       </div>
       

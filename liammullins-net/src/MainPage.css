@@ -177,13 +177,15 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 0.5vh;
 
   flex-grow: 0;
   flex-shrink: 0;
   width: 110vw;
-  height: 20vh;
-  transform: translateY(14vh);
+  height: 30vh;
+  transform: translateY(10vh);
   margin-top: auto;
+  padding-top: 10vh;
   background-color: black;
   transform-origin: bottom left;
   rotate: -2deg;
@@ -197,20 +199,44 @@ html, body {
 
 .footer p
 {
+  display: inline-block;
   font-family: 'Georgia';
   font-size: 1.5vw;
   letter-spacing: -0.05em;
+  word-spacing: 0.2em;
   width: 90vw;
   transform: translateX(-5vw);
-  padding-top: 1vh;
-  text-align: justify;
-  text-align-last: justify;
+  text-align: center;
+  text-align-last: center;
   color: rgb(218, 218, 218);
   margin: 0;
 }
 
 .footer a, a:visited, a:hover, a:active
 {
+  display: inline-block;
   color: inherit;
   text-decoration: none;
+}
+
+.footerLinks
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: 'Georgia';
+  font-size: 1.5vw;
+  letter-spacing: -0.05em;
+  word-spacing: 0.2em;
+  width: 10vw;
+  transform: translateX(-5vw);
+  color: rgb(218, 218, 218);
+  margin: 0;
+}
+
+.icon {
+  filter: brightness(0) invert(1);
+  width: 2vw;
+  height: 2vw;
 }
