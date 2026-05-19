@@ -1,4 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overscroll-behavior: none;
+}
 
+.wrapper
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
 
 .rotation
 {
@@ -9,7 +24,7 @@
 
 }
 
-.title
+.header
 {
   position: absolute;
   top: 25px;
@@ -23,6 +38,11 @@
   letter-spacing: -0.105em;
   text-align: left;
   user-select: none;
+}
+
+.nameText
+{
+  display: inline-block;
 }
 
 .dot
@@ -39,6 +59,19 @@
   cursor: pointer;
   z-index: 10;
 }
+
+.net
+{
+  display:inline-block;
+  transform-origin: bottom left;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
+}
+
 
 .titleLoremIpsum {
   display: block;
@@ -135,4 +168,49 @@
   width: max-content;
   z-index: -20;
   pointer-events: none;
+}
+
+
+.footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 110vw;
+  height: 20vh;
+  transform: translateY(14vh);
+  margin-top: auto;
+  background-color: black;
+  transform-origin: bottom left;
+  rotate: -2deg;
+  z-index: 100;
+}
+
+.pageContent
+{
+  height: 120vh;
+}
+
+.footer p
+{
+  font-family: 'Georgia';
+  font-size: 1.5vw;
+  letter-spacing: -0.05em;
+  width: 90vw;
+  transform: translateX(-5vw);
+  padding-top: 1vh;
+  text-align: justify;
+  text-align-last: justify;
+  color: rgb(218, 218, 218);
+  margin: 0;
+}
+
+.footer a, a:visited, a:hover, a:active
+{
+  color: inherit;
+  text-decoration: none;
 }

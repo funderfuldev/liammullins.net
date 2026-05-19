@@ -7,8 +7,8 @@ import {motion} from "motion/react";
 export default function PageList() {
 
     const PAGES = [
-    {key: 1, name: "work", description: "design, prints, games"},
-    {key: 2, name: "about", description: "making-of, statement"},
+    {key: 1, name: "work", description: "design,   prints,   games"},
+    {key: 2, name: "about", description: "bio, artist statement"},
     {key:3, name: "contact", description: "email, socials, cv"}
   ];
 
@@ -22,7 +22,7 @@ export default function PageList() {
         return (
           <motion.button
             key={page.key}
-            whileHover={{ x: 20, transition: { duration: 0.2 } }}
+            whileHover={{ x: '2.7vw', transition: { duration: 0.2 } }}
             whileTap={{ scaleX: 1.1, scaleY: 0.9, x: 25, rotateZ: -1, transition: { type: 'spring', stiffness: 1000, damping: 35, mass: 2 } }}
             onClick={() => setSelectedPage(page)}
             className='pageButtonSelected'
@@ -46,7 +46,7 @@ export default function PageList() {
               }}
               transition={{ type: 'spring', stiffness: 1000, damping: 100, mass: 2 }}
             >
-              <i>{page.description}</i>
+              {page.description}
             </motion.p>
           </motion.button>
         );
