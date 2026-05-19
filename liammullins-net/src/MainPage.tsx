@@ -1,13 +1,9 @@
 
 import './MainPage.css';
-import TwitterLogo from './assets/twitter.svg';
-import EmailLogo from './assets/email.svg';
-import GithubLogo from './assets/github.svg';
-
-import {motion, vw} from "motion/react";
 
 import Title from "./Title.tsx";
 import PageList from "./PageList.tsx";
+import Footer from './Footer.tsx';
 
 function MainPage() 
 {
@@ -32,33 +28,10 @@ function MainPage()
           </div>
         </div>
 
-        <div className='pageContent'></div>
+        <div className='pageContent'/>
 
-        <div className='footer'>
-          <div className='footerLinks'>
-            <motion.img 
-            whileHover={{scale: 2, rotateZ: -4}}
-            src={GithubLogo} alt='Github' className='githubIcon'/>
-            <motion.img 
-            whileHover={{scale: 2}}
-            src={TwitterLogo} alt='Twitter (X The Everything App)' className='twitterIcon'/>
-            <motion.img 
-            whileHover={{scale: 2, rotateZ: 4}}
-            src={EmailLogo} alt='Email' className='emailIcon'/>
-          </div>
-          <p><motion.a 
-          whileHover={{scale: 1.05, y: -2}}
-          animate={{scale: 1, rotateZ: 0}}
-          href='https://liammullins.net'><u>liammullins.net</u></motion.a> was entirely designed and hand-coded by yours truly in <motion.a 
-          whileHover={{scale: 1.05, y: -2}}
-          animate={{scale: 1, rotateZ: 0}}
-          href='https://react.dev'><u>React.</u></motion.a>
-          </p>
-          <p>&copy; Liam Mullins 2026-present. All rights reserved.</p>
-          
-        </div>
+        <Footer/>
       </div>
-      
     </>
   )
 }

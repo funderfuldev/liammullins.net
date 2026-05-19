@@ -9,7 +9,8 @@ export default function Title() {
     "More is actually more.............",
     "Contrast is everything.............",
     "Words words, words...............",
-    "Game feel is an illusion..........."
+    "Game feel is an illusion...........",
+    "The end is never the end is ne"
     ];
 
     const randomTextChoice = RANDOMTEXTCHOICES[Math.floor(Math.random() * RANDOMTEXTCHOICES.length)];
