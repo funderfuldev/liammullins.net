@@ -3,7 +3,7 @@ import Header from './Header.tsx';
 import Footer from './Footer.tsx';
 import React from 'react'
 
-import { Outlet, useLocation, useOutlet } from 'react-router';
+import { useLocation, useOutlet } from 'react-router';
 import { AnimatePresence } from 'motion/react';
 
 export default function App() 

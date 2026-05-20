@@ -20,11 +20,11 @@ export default function Title() {
         color: 'var(--dot-default-color)',
         y: '-1vw',
         zIndex: 15,
-        transition: { type: 'spring', stiffness: 1000, damping: 50, mass: 2 }
+        transition: { type: 'spring' as const, stiffness: 1000, damping: 50, mass: 2 }
     };
     const letterDefaultAnimation = {
         y: 0,
-        transition: { type: 'spring', stiffness: 1000, damping: 50, mass: 2 }
+        transition: { type: 'spring' as const, stiffness: 1000, damping: 50, mass: 2 }
     }
 
     return (
