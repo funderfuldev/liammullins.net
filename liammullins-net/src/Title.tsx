@@ -2,18 +2,19 @@
 import './Header.css';
 import {motion} from 'motion/react';
 
+const RANDOMTEXTCHOICES = [
+"More is actually more.............",
+"Contrast is everything.............",
+"Words words, words...............",
+"Game feel is an illusion...........",
+"The end is never the end is ne"
+];
+
+const randomTextChoiceForSession = RANDOMTEXTCHOICES[Math.floor(Math.random() * RANDOMTEXTCHOICES.length)];
 
 export default function Title() {
 
-    const RANDOMTEXTCHOICES = [
-    "More is actually more.............",
-    "Contrast is everything.............",
-    "Words words, words...............",
-    "Game feel is an illusion...........",
-    "The end is never the end is ne"
-    ];
-
-    const randomTextChoice = RANDOMTEXTCHOICES[Math.floor(Math.random() * RANDOMTEXTCHOICES.length)];
+    const randomTextChoice = randomTextChoiceForSession;
 
     const letterHoverAnimation = {
         color: 'var(--dot-default-color)',
@@ -27,8 +28,11 @@ export default function Title() {
     }
 
     return (
-        <>
-            
+        <motion.div
+        initial={{x: '-10vw', opacity: 0}}
+        animate={{x: 0, opacity: 1}}
+        transition={{duration: 1, ease: [0,.99,0,.99]}}
+        >
             <span className='nameText'>liammullins</span>
 
             <motion.span 
@@ -53,6 +57,6 @@ export default function Title() {
             <div className='randomText'>
             {randomTextChoice}
             </div>
-        </>
+        </motion.div>
     );
 }

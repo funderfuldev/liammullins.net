@@ -47,7 +47,11 @@ export default function PageList() {
   const defaultHeight = isMobile ? '7vw' : '3.2vw';
 
   return (
-    <div className='pageList' id='pageList'>
+    <motion.div 
+    initial={{x: '-15vw'}}
+    animate={{x: '0vw'}}
+    transition={{duration: 1.2, ease: [0,.99,0,.99]}}
+    className='pageList' id='pageList'>
       {PAGES.map((page) => {
         const isSelected = page.key === selectedPage.key;
 
@@ -60,7 +64,8 @@ export default function PageList() {
             className='pageButton'
             initial=
             {{backgroundColor: isSelected ? 'black' : 'var(--dot-default-color)',
-              height: isSelected ? selectedHeight : defaultHeight,}}
+              height: isSelected ? selectedHeight : defaultHeight,
+            }}
             animate={{
               backgroundColor: isSelected ? 'black' : 'var(--dot-default-color)',
               height: isSelected ? selectedHeight : defaultHeight,
@@ -82,6 +87,6 @@ export default function PageList() {
           </motion.button>
         );
       })}
-    </div>
+    </motion.div>
   );
 }

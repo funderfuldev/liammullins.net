@@ -69,7 +69,7 @@
   letter-spacing: -0.05em;
   line-height: 75%;
   text-align: justify;
-  color: var(--dot-default-color);
+  color: var(--lorem-ipsum-color);
   user-select: none;
   z-index: -10;
 }

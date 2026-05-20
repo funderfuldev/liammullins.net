@@ -123,7 +123,7 @@
   .footerLinks
   {
     transform: translateX(-24vw);
-    margin-bottom: 2vh;
+    margin-bottom: 0vh;
   }
 
   .footer p
