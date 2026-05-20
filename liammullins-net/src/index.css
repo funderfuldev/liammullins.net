@@ -1,0 +1,83 @@
+:root {
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --dot-default-color: #c7c7c7;
+  --lorem-ipsum-color: #dddddc;
+  --footer-background-color: #f0f0f0;
+}
+
+body, #root {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.wrapper
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.spacer
+{
+  height: 30vw;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.bottomSpacer
+{
+  height: 30vw;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overscroll-behavior: none;
+}
+
+.pageContent
+{
+  min-height: 120vh;
+}
+
+.pageContainer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageTitle
+{
+  rotate: -5deg;
+  color: var(--lorem-ipsum-color);
+  font-size: 2vw;
+  font-family: 'Georgia';
+  letter-spacing: -0.1rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .pageTitle{
+    font-size: clamp(1.2rem, 1vw, 1.5rem);
+  }
+}
