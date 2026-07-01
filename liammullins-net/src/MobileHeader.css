@@ -10,8 +10,10 @@
 
 .headerImage
 {
-    width: 112vw;
-    margin-left: 2vw;
+    width: 129vw;
+    margin-left: -2vw;
+    margin-top: -5vh;
+    rotate: -5deg;
 }
 
 .pageButtonsHolderMobile
@@ -22,8 +24,8 @@
     justify-content: space-evenly;
     width: 100%;
     box-sizing: border-box;
-    rotate: -2.3deg;
-    margin-top: -3vh;
+    rotate: -5deg;
+    margin-top: 0.5vh;
 }
 
 

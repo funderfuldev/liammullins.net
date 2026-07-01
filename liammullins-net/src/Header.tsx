@@ -1,6 +1,5 @@
 
 import { motion } from 'motion/react';
-import { useState, useEffect } from 'react';
 
 import './Header.css'
 

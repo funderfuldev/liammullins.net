@@ -43,6 +43,7 @@ export default function MobileHeader()
 
                     return(
                         <span 
+                        key={page.key}
                         className='pageButtonMobile' 
                         onClick={() => handlePageClick(page)}>
                             {isSelected ? <u>{page.name}</u> : page.name}
