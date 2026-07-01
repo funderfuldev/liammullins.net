@@ -9,7 +9,7 @@ export default function About() {
         animate={{opacity: 1, y: 0, scaleX: 1, scaleY: 1}}
         transition={{ type: 'spring', stiffness: 500, damping: 20, mass: 1 }}
         >
-            <p className="pageTitle">under construction.</p>
+            <p className="pageTitle"><b>about</b> is under construction.</p>
             <p className="pageTitle">check back later!</p>
         </motion.div>
     )
