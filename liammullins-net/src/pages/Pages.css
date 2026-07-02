@@ -1,0 +1,46 @@
+
+.pageHeaderContainer
+{
+    position: relative;
+    transform-origin: top left;
+    rotate: -5deg;
+}
+
+.pageHeaderText
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 4vw;
+    font-family: 'Georgia';
+    letter-spacing: -0.3vw;
+    margin-bottom: -10vw;
+    z-index: 2;
+}
+
+.pageHeaderDash
+{
+    position: relative;
+    margin-top: -1.4vw;
+    color: var(--dot-default-color);
+    letter-spacing: 0.05vw;
+    font-size: 2vw;
+    margin-left: -0.15vw;
+    z-index: -1;
+}
+
+.pageHeaderSubtext
+{
+    margin-top: -2.8vw;
+    font-size: 1.5vw;
+    letter-spacing: -0.05em;
+    color: var(--dot-default-color);
+}
+
+.pageBody
+{
+    font-family: 'Georgia';
+    font-size: clamp(1.2rem, 1vw, 1.5rem);
+    letter-spacing: -0.05em;
+    max-width: 50vw;
+}
