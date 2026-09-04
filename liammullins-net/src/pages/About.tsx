@@ -2,6 +2,7 @@
 import './Pages.css'
 import headShotImage from '../assets/images/headshot.webp';
 import guitarImage from '../assets/images/guitar.webp';
+import signatureImage from '../assets/images/signature.webp';
 
 import {motion} from 'motion/react';
 
