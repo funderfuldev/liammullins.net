@@ -17,7 +17,7 @@ export default function Contact() {
                 </p>
                 <div style={{height: '8vw'}}></div>
                 <div style={{rotate: '-0deg'}}>
-                    <p className='pageBody'>For professional inquiries, please contact me via email. I am currently available for freelance work and commissions.</p>
+                    <p className='pageBody'>For professional inquiries, please contact me via <u>email</u> at <u>0liammullins0@gmail.com</u>. I am currently available for freelance work and commissions.</p>
                 </div>
                 <div className='biographyPhotos'>
                 <div style={{height: '0vw'}}></div> 
@@ -29,11 +29,11 @@ export default function Contact() {
                 </p>
                 <div style={{height: '8vw'}}></div>
                 <div style={{rotate: '-0deg'}}>
-                    <p className='pageBody'>For updates on my printed work, digital projects, and miscellaneous sketches/artwork, follow me on my art instagram. I try to post updates semi-frequently.</p>
+                    <p className='pageBody'>For updates on my printed work, digital projects, and miscellaneous sketches/artwork, follow me on my art <u>instagram</u>. I try to post updates semi-frequently.</p>
                     <div style={{height: '0vw'}}></div>
-                    <p className='pageBody'>If you would like to play some of my games or follow my development progress, feel free to check out my itch.io page.</p>
+                    <p className='pageBody'>If you would like to play some of my games or follow my development progress, feel free to check out my <u>itch.io</u> page.</p>
                     <div style={{height: '0vw'}}></div>
-                    <p className='pageBody'>For non-serious, infrequent updates, artwork, and strange thoughts, follow my twitter account.</p>
+                    <p className='pageBody'>For non-serious, infrequent updates, artwork, and strange thoughts, follow my <u>twitter</u> account.</p>
                 </div>
 
                 <p className='pageHeaderText'><b>curriculum vitae</b>
