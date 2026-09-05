@@ -45,6 +45,11 @@
     max-width: 40vw;
 }
 
+.pageBody a, a:link, a:visited, a:active
+{
+    color: blue !important;
+}
+
 .headShotImage
 {
     position: relative;
