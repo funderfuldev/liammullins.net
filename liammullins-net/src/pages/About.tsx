@@ -1,8 +1,7 @@
 
 import './Pages.css'
-import headShotImage from '../assets/images/headshot.webp';
-import guitarImage from '../assets/images/guitar.webp';
-import signatureImage from '../assets/images/signature.webp';
+import headShotImage from '../assets/images/about/headshot.webp';
+import guitarImage from '../assets/images/about/guitar.webp';
 
 import {motion} from 'motion/react';
 

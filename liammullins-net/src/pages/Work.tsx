@@ -1,16 +1,51 @@
 
 import { motion } from "motion/react"
 
+import DesignGallery from '../DesignGallery.tsx';
+
 export default function Work() {
 
     return (
         <motion.div
-        initial={{opacity: 0, y: 25, scaleX: 0.9, scaleY: 1.1}}
-        animate={{opacity: 1, y: 0, scaleX: 1, scaleY: 1}}
-        transition={{ type: 'spring', stiffness: 500, damping: 20, mass: 1 }}
+        initial={{opacity: 0, y: 25}}
+        animate={{opacity: 1, y: 0}}
+        transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
         >
-            <p className="pageTitle"><b>work</b> is under construction.</p>
-            <p className="pageTitle">check back later!</p>
+            <div className='pageHeaderContainer'>
+                <p className='pageHeaderText'><b>design</b>
+                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p className='pageHeaderSubtext'>posters, book covers, advertisements</p>
+                </p>
+                <div style={{height: '8vw'}}></div>
+            </div>
+
+            <DesignGallery/>
+            
+            <div style={{height: '50vw'}}/>
+
+            <div className='pageHeaderContainer'>
+                <p className='pageHeaderText'><b>prints</b>
+                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p className='pageHeaderSubtext'>linocut, woodcut, lithography, etching</p>
+                </p>
+                <div style={{height: '8vw'}}></div>
+            </div>
+
+            <div className='pageHeaderContainer'>
+                <p className='pageHeaderText'><b>games</b>
+                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p className='pageHeaderSubtext'>platformers, first-person shooters, game jams</p>
+                </p>
+                <div style={{height: '8vw'}}></div>
+            </div>
+
+            <div className='pageHeaderContainer'>
+                <p className='pageHeaderText'><b>digital</b>
+                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p className='pageHeaderSubtext'>miscellaneous personal work</p>
+                </p>
+                <div style={{height: '8vw'}}></div>
+            </div>
         </motion.div>
     )
 }

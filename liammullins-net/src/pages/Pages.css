@@ -92,3 +92,17 @@
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.imageGallery {
+    column-count: 3;
+    column-gap: 1vw;
+    width: 100%;
+}
+
+.imageGallery img {
+    width: 25vw;
+    height: auto;
+    display: block;
+    margin-bottom: 10vw;
+    break-inside: avoid;
+}
