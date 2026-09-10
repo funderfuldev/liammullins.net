@@ -20,8 +20,6 @@ export default function Work() {
             </div>
 
             <DesignGallery/>
-            
-            <div style={{height: '50vw'}}/>
 
             <div className='pageHeaderContainer'>
                 <p className='pageHeaderText'><b>prints</b>

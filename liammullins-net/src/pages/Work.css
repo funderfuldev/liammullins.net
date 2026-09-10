@@ -1,0 +1,67 @@
+.designGallery
+{
+    display: relative;
+    width: 50vw;
+    height: 80vw;
+}
+
+.image
+{
+    size: inherit;
+    width: inherit;
+    box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.urec1
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 1vw;
+    left: 0vw;
+    width: 20vw;
+}
+
+.urec2
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 4vw;
+    left: 22vw;
+    width: 15vw;
+}
+
+.urec3
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 25vw;
+    left: 28vw;
+    width: 10vw;
+}
+
+.urec7
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: -5vw;
+    left: 41vw;
+    width: 25vw;
+    rotate: 10deg;
+}
+
+.bookCover
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 28vw;
+    left: 8vw;
+    width: 17vw;
+    rotate: 6deg;
+}

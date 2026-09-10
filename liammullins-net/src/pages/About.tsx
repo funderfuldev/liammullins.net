@@ -27,9 +27,9 @@ export default function About() {
                     <div className='headShotImageHolder'>
                         <motion.img 
                         animate={{opacity: 1, y: 0}}
-                        initial={{opacity: 0, y: 25, rotate: -1}}
-                        whileHover={{scale: 1.01, rotate: -5}}
-                        whileTap={{scale: 1.1, rotate: -6}}
+                        initial={{opacity: 0, y: 25, rotate: -5}}
+                        whileHover={{scale: 1.01, rotate: -6}}
+                        whileTap={{scale: 1.1, rotate: -7}}
                         transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
                         src={headShotImage} alt='headshot' className='headShotImage'></motion.img>
                     </div>
@@ -40,9 +40,9 @@ export default function About() {
                     <div className='guitarImageHolder'>
                         <motion.img 
                         animate={{opacity: 1, y: 0}}
-                        initial={{opacity: 0, y: 25, rotate: 1}}
-                        whileHover={{scale: 1.01, rotate: 5}}
-                        whileTap={{scale: 1.1, rotate: 6}}
+                        initial={{opacity: 0, y: 25, rotate: 5}}
+                        whileHover={{scale: 1.01, rotate: 6}}
+                        whileTap={{scale: 1.1, rotate: 7}}
                         transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
                         src={guitarImage} alt='guitar' className='guitarImage'></motion.img>
                     </div>
