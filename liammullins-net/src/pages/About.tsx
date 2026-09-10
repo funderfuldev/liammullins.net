@@ -22,21 +22,32 @@ export default function About() {
                 <div style={{rotate: '-0deg'}}>
                     <p className='pageBody'>Liam Mullins is a printmaker, digital artist, programmer, game designer, and musician. He was born in 2004 and grew up in the quiet suburbs of Richmond, Virginia. He currently attends the University of Virginia, pursuing a BA in Computer Science and Studio Art with a concentration in printmaking.</p>
                 </div>
+
                 <div className='biographyPhotos'>
-                   <motion.img 
-                animate={{opacity: 1, y: 0}}
-                initial={{opacity: 0, y: 25}}
-                whileHover={{scale: 1.01, rotate: -1}}
-                transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
-                src={headShotImage} alt='headshot' className='headShotImage'></motion.img>
-                <div style={{height: '10vw'}}></div>
-                <motion.img 
-                animate={{opacity: 1, y: 0}}
-                initial={{opacity: 0, y: 25}}
-                whileHover={{scale: 1.01, rotate: 1}}
-                transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
-                src={guitarImage} alt='guitar' className='guitarImage'></motion.img>
-                <div style={{height: '10vw'}}></div> 
+                    <div className='headShotImageHolder'>
+                        <motion.img 
+                        animate={{opacity: 1, y: 0}}
+                        initial={{opacity: 0, y: 25, rotate: -1}}
+                        whileHover={{scale: 1.01, rotate: -5}}
+                        whileTap={{scale: 1.1, rotate: -6}}
+                        transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
+                        src={headShotImage} alt='headshot' className='headShotImage'></motion.img>
+                    </div>
+                    
+
+                    <div style={{height: '10vw'}}></div>
+
+                    <div className='guitarImageHolder'>
+                        <motion.img 
+                        animate={{opacity: 1, y: 0}}
+                        initial={{opacity: 0, y: 25, rotate: 1}}
+                        whileHover={{scale: 1.01, rotate: 5}}
+                        whileTap={{scale: 1.1, rotate: 6}}
+                        transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
+                        src={guitarImage} alt='guitar' className='guitarImage'></motion.img>
+                    </div>
+                    
+                    <div style={{height: '10vw'}}></div> 
                 </div>
 
                 <p className='pageHeaderText'><b>artist statement</b>
