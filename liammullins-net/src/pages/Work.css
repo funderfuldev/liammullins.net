@@ -1,9 +1,116 @@
+.lightboxBackdrop 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.884);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 3vw;
+    box-sizing: border-box;
+    touch-action: none;
+}
+
+.lightboxContentContainer 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    max-width: 85vw;
+    max-height: 85vh;
+}
+
+.lightboxImageHolder 
+{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 50vw;
+}
+
+.lightboxImage 
+{
+    max-width: 50vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    user-select: none;
+}
+
+.lightboxTextContainer 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 25vw;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+}
+
+.lightboxTitle 
+{
+    font-size: 4vw;
+    font-family: 'Georgia';
+    letter-spacing: -0.3vw;
+    line-height: 75%;
+    margin: 0 0 0.5vw 0;
+    font-weight: bold;
+}
+
+.lightboxSubtitle 
+{
+    font-size: 1.5vw;
+    letter-spacing: -0.05em;
+    color: var(--dot-default-color);
+    margin: 0 0 1.5vw 0;
+}
+
+.lightboxDescription 
+{
+    color: var(--dot-default-color);
+    font-family: 'Georgia';
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    letter-spacing: -0.05em;
+    margin: 0 0 2vw 0;
+    white-space: pre-line;
+}
+
+.lightboxCloseButton 
+{
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 0.6vw 1.2vw;
+    text-align: left;
+    padding-right: 100vw;
+    font-family: 'Georgia';
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    letter-spacing: -0.05em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lightboxCloseButton:hover 
+{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
 .designGallery
 {
     display: relative;
     width: 50vw;
     height: 70vw;
-    z-index: 2;
+    z-index: 5;
 }
 
 .image
@@ -15,6 +122,7 @@
     0 1px 2px rgba(0, 0, 0, 0.05),
     0 4px 12px rgba(0, 0, 0, 0.05);
     z-index: 10;
+    user-select: none;
 }
 
 .des1
@@ -132,7 +240,6 @@
     left: 39vw;
     width: 22vw;
     rotate: 0deg;
-    z-index: 2;
 }
 
 

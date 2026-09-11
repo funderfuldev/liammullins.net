@@ -39,6 +39,7 @@ export default function Footer() {
           animate={{scale: 1, rotateZ: 0}}
           href='https://react.dev'><u>React.</u></motion.a>
           </p>
+          <p>No vibe-coding was used whatsoever. Check out the source code here.</p>
           <p>&copy; Liam Mullins 2026-present. All rights reserved.</p>
           
         </div>
