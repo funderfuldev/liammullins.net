@@ -2,19 +2,22 @@
 {
     display: relative;
     width: 50vw;
-    height: 80vw;
+    height: 70vw;
+    z-index: 2;
 }
 
 .image
 {
+    position: relative;
     size: inherit;
     width: inherit;
     box-shadow: 
     0 1px 2px rgba(0, 0, 0, 0.05),
     0 4px 12px rgba(0, 0, 0, 0.05);
+    z-index: 10;
 }
 
-.urec1
+.des1
 {
     color: var(--dot-default-color);
     background-color: var(--dot-default-color);
@@ -24,7 +27,7 @@
     width: 20vw;
 }
 
-.urec2
+.des2
 {
     color: var(--dot-default-color);
     background-color: var(--dot-default-color);
@@ -34,17 +37,18 @@
     width: 15vw;
 }
 
-.urec3
+.des3
 {
     color: var(--dot-default-color);
     background-color: var(--dot-default-color);
     position: absolute;
     top: 25vw;
-    left: 28vw;
-    width: 10vw;
+    left: 29vw;
+    width: 12vw;
+    rotate: 7deg;
 }
 
-.urec7
+.des4
 {
     color: var(--dot-default-color);
     background-color: var(--dot-default-color);
@@ -55,7 +59,7 @@
     rotate: 10deg;
 }
 
-.bookCover
+.des5
 {
     color: var(--dot-default-color);
     background-color: var(--dot-default-color);
@@ -64,4 +68,76 @@
     left: 8vw;
     width: 17vw;
     rotate: 6deg;
+}
+
+.des6
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 29vw;
+    left: -6vw;
+    width: 12vw;
+}
+
+.des7
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 30vw;
+    left: 42vw;
+    width: 28vw;
+    rotate: 10deg;
+}
+
+.des8
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 42vw;
+    left: 27vw;
+    width: 10vw;
+}
+
+.des9
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 18vw;
+    left: 67vw;
+    width: 10vw;
+    rotate: 8deg;
+}
+
+.des10
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 17vw;
+    left: -11vw;
+    width: 8vw;
+    rotate: -5deg;
+}
+
+.des11
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 51vw;
+    left: 39vw;
+    width: 22vw;
+    rotate: 0deg;
+    z-index: 2;
+}
+
+
+.printsGallery
+{
+    display: relative;
+    height: 50vw;
 }

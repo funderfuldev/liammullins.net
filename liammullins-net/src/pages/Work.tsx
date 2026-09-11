@@ -3,6 +3,8 @@ import { motion } from "motion/react"
 
 import DesignGallery from '../DesignGallery.tsx';
 
+import './Work.css'
+
 export default function Work() {
 
     return (
@@ -28,6 +30,8 @@ export default function Work() {
                 </p>
                 <div style={{height: '8vw'}}></div>
             </div>
+
+            <div className="printsGallery"/>
 
             <div className='pageHeaderContainer'>
                 <p className='pageHeaderText'><b>games</b>

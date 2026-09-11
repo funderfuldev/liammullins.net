@@ -26,7 +26,8 @@
     letter-spacing: 0.05vw;
     font-size: 2vw;
     margin-left: -0.15vw;
-    z-index: -1;
+    z-index: -2;
+    user-select: none;
 }
 
 .pageHeaderSubtext
