@@ -52,7 +52,7 @@ const designItems: DesignItem[] = [
     alt: 'acoustic show poster', 
     title: 'Acoustic Show',
     subtitle: 'Photoshop • 2024',
-    description: 'Minimalist concert flyer emphasizing space and expressive text placement.',
+    description: 'This was one of the first posters I created for the UVA music club University Records. I wanted to have graphics that alluded to the comfy, intimate, and relaxed nature of the event somewhere within the poster. Unfortunately the show didn\'t end up taking place outside. \n\nI actually played this show too! My name is on the poster, first in the lineup.',
     initialRotate: 5 
   },
   { 
@@ -60,19 +60,19 @@ const designItems: DesignItem[] = [
     className: 'des3', 
     src: urec_3, 
     alt: 'acoustic show poster', 
-    title: 'Acoustic Show',
-    subtitle: 'Print Design • 2024',
-    description: 'Experimental composition pushing print density and visual repetition.',
+    title: 'Acoustic Show at 1515',
+    subtitle: 'Photoshop • 2025',
+    description: 'A lot of my previous posters for acoustic shows up until this point had been very abstract or used photography for the main graphic. So for a change, I decided to feature an illustrated figure playing the guitar, which is what the majority of performers at these events play. My sister was learning how to play the guitar at the time, so I drew the figure in her likeness.',
     initialRotate: -2 
   },
   { 
     id: 'des4', 
     className: 'des4', 
     src: urec_7, 
-    alt: 'house show poster', 
-    title: 'House Show Poster',
-    subtitle: 'Graphic Design • 2024',
-    description: 'Layered graphics created using high-contrast iconography and bold line work.',
+    alt: 'halloween house show poster', 
+    title: 'Halloween House Show',
+    subtitle: 'Photoshop • 2024',
+    description: 'This poster was created for a joint house show between the UVA music clubs Indieheads and University Records. Since it was a halloween show, I wanted something striking and terrifying - the hero graphic here was cut out of an old wood engraving I sourced from archive.org. I cannot remember what the woodcut was depicting initially.',
     initialRotate: -2 
   },
   { 
@@ -81,8 +81,8 @@ const designItems: DesignItem[] = [
     src: book_cover, 
     alt: 'book cover commission', 
     title: 'Book Cover Commission',
-    subtitle: 'Illustration & Layout • 2023',
-    description: 'Custom typography layout exploring texture, mood, and lonely repetitive language.',
+    subtitle: 'Illustrator, Photoshop, InDesign • 2024',
+    description: 'A colleague of my father commissioned me to create a cover for his historical fiction novel about the Coastal Picket Force along the east coast during WWII. \n\nThe photos I used for this project are real and sourced from that time period, but the sailor\'s hat was edited in to make the imagery more clear at a glance.',
     initialRotate: -5 
   },
   { 

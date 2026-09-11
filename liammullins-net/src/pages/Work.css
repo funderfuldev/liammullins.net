@@ -86,8 +86,8 @@
 .lightboxCloseButton 
 {
     background: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid var(--dot-default-color);
+    color: var(--dot-default-color);
     padding: 0.6vw 1.2vw;
     text-align: left;
     padding-right: 100vw;
