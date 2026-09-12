@@ -1,7 +1,9 @@
 
 import { motion } from "motion/react"
 
-import DesignGallery from '../DesignGallery.tsx';
+import DesignGallery from './DesignGallery.tsx';
+import PrintsGallery from "./PrintsGallery.tsx";
+import GamesGallery from './GamesGallery.tsx';
 
 import './Work.css'
 
@@ -16,7 +18,7 @@ export default function Work() {
             <div className='pageHeaderContainer'>
                 <p className='pageHeaderText'><b>design</b>
                 <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-                <p className='pageHeaderSubtext'>posters, book covers, advertisements</p>
+                <p className='pageHeaderSubtext'>selected posters, book covers, advertisements</p>
                 </p>
                 <div style={{height: '8vw'}}></div>
             </div>
@@ -31,7 +33,7 @@ export default function Work() {
                 <div style={{height: '8vw'}}></div>
             </div>
 
-            <div className="printsGallery"/>
+            <PrintsGallery/>
 
             <div className='pageHeaderContainer'>
                 <p className='pageHeaderText'><b>games</b>
@@ -40,6 +42,8 @@ export default function Work() {
                 </p>
                 <div style={{height: '8vw'}}></div>
             </div>
+
+            <GamesGallery/>
 
             <div className='pageHeaderContainer'>
                 <p className='pageHeaderText'><b>digital</b>

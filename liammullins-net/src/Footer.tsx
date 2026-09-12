@@ -34,10 +34,10 @@ export default function Footer() {
           <p><motion.a 
           whileHover={{scale: 1.05, y: -2}}
           animate={{scale: 1, rotateZ: 0}}
-          href='https://liammullins.net'><u>liammullins.net</u></motion.a> was entirely designed and hand-coded by yours truly in <motion.a 
+          href='https://liammullins.net'>liammullins.net</motion.a> was entirely designed and hand-coded by yours truly in <motion.a 
           whileHover={{scale: 1.05, y: -2}}
           animate={{scale: 1, rotateZ: 0}}
-          href='https://react.dev'><u>React.</u></motion.a>
+          href='https://react.dev'>React.</motion.a>
           </p>
           <p>No vibe-coding was used whatsoever. Check out the source code here.</p>
           <p>&copy; Liam Mullins 2026-present. All rights reserved.</p>

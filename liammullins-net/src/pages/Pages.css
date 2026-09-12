@@ -47,7 +47,10 @@
     max-width: 40vw;
 }
 
-.pageBody a, a:link, a:visited, a:active
+.pageBody a, 
+.pageBody a:link, 
+.pageBody a:visited, 
+.pageBody a:active
 {
     color: blue !important;
 }

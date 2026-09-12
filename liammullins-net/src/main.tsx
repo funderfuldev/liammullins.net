@@ -5,7 +5,7 @@ import {BrowserRouter, Routes, Route} from 'react-router';
 import './index.css'
 
 import App from './App.tsx'
-import Work from './pages/Work.tsx';
+import Work from './pages/work/Work.tsx';
 import About from './pages/About.tsx';
 import Contact from './pages/Contact.tsx';
 

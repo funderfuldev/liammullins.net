@@ -63,6 +63,7 @@
     line-height: 75%;
     margin: 0 0 0.5vw 0;
     font-weight: bold;
+    white-space: pre-line;
 }
 
 .lightboxSubtitle 
@@ -81,6 +82,13 @@
     letter-spacing: -0.05em;
     margin: 0 0 2vw 0;
     white-space: pre-line;
+}
+
+.lightboxDescription a,
+.lightboxDescription a:visited,
+.lightboxDescription a:active
+{
+    color: white;
 }
 
 .lightboxCloseButton 
@@ -109,7 +117,7 @@
 {
     display: relative;
     width: 50vw;
-    height: 70vw;
+    height: 80vw;
     z-index: 5;
 }
 
@@ -226,8 +234,8 @@
     background-color: var(--dot-default-color);
     position: absolute;
     top: 17vw;
-    left: -11vw;
-    width: 8vw;
+    left: -12vw;
+    width: 10vw;
     rotate: -5deg;
 }
 
@@ -242,9 +250,147 @@
     rotate: 0deg;
 }
 
+.des12
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 53vw;
+    left: 64vw;
+    width: 10vw;
+    rotate: 6deg;
+}
+
 
 .printsGallery
 {
     display: relative;
-    height: 50vw;
+    height: 80vw;
+}
+
+.pri1
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 2vw;
+    left: -10vw;
+    width: 50vw;
+    rotate: 0deg;
+}
+
+.pri2
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: -6vw;
+    left: 45vw;
+    width: 15vw;
+    rotate: 10deg;
+}
+
+.pri3
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 28vw;
+    left: 25vw;
+    width: 25vw;
+    rotate: 4deg;
+}
+
+.pri4
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 27vw;
+    left: 7vw;
+    width: 15vw;
+    rotate: 2deg;
+}
+
+.pri5
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 17vw;
+    left: 43vw;
+    width: 15vw;
+    rotate: 2deg;
+}
+
+.pri6
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 30vw;
+    left: 53vw;
+    width: 20vw;
+    rotate: 2deg;
+}
+
+.pri7
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 50vw;
+    left: 25vw;
+    width: 12vw;
+    rotate: 2deg;
+}
+
+.pri8
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 41vw;
+    left: 1vw;
+    width: 20vw;
+    rotate: -2deg;
+}
+
+.gamesGallery
+{
+    display: relative;
+    height: 80vw;
+}
+
+.gam1
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 1vw;
+    left: -5vw;
+    width: 40vw;
+    rotate: 0deg;
+}
+
+.gam2
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: -10vw;
+    left: 40vw;
+    width: 20vw;
+    rotate: 12deg;
+}
+
+.gam3
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: -10vw;
+    left: 40vw;
+    width: 20vw;
+    rotate: 12deg;
 }

@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, type Transition } from 'motion/react';
-import './pages/Pages.css';
-import './pages/Work.css';
+import '../Pages.css';
+import './Work.css';
 
-import urec_1 from './assets/images/work/urec_1.jpg';
-import urec_2 from './assets/images/work/urec_2.png';
-import urec_3 from './assets/images/work/urec_3.jpg';
-import urec_7 from './assets/images/work/urec_7.png';
-import book_cover from './assets/images/work/book_cover.jpg';
-import urec_5 from './assets/images/work/urec_5.jpg';
-import urec_6 from './assets/images/work/urec_6.png';
-import nocomp_2 from './assets/images/work/nocomp_2.jpg';
-import nocomp_1 from './assets/images/work/nocomp_1.jpg';
-import urec_8 from './assets/images/work/urec_8.jpg';
-import urec_4 from './assets/images/work/urec_4.jpg';
+import urec_1 from '../../assets/images/work/urec_1.jpg';
+import urec_2 from '../../assets/images/work/urec_2.png';
+import urec_3 from '../../assets/images/work/urec_3.jpg';
+import urec_7 from '../../assets/images/work/urec_7.png';
+import book_cover from '../../assets/images/work/book_cover.jpg';
+import urec_5 from '../../assets/images/work/urec_5.jpg';
+import urec_6 from '../../assets/images/work/urec_6.png';
+import nocomp_2 from '../../assets/images/work/nocomp_2.jpg';
+import nocomp_1 from '../../assets/images/work/nocomp_1.jpg';
+import urec_8 from '../../assets/images/work/urec_8.jpg';
+import urec_4 from '../../assets/images/work/urec_4.jpg';
+import single_cover from '../../assets/images/work/single_cover.jpg';
+import ep_cover from '../../assets/images/work/ep_cover.jpg';
 
 interface DesignItem {
   id: string;
@@ -42,7 +44,7 @@ const designItems: DesignItem[] = [
     alt: 'acoustic jam poster', 
     title: 'Acoustic Jam',
     subtitle: 'Photoshop • 2025',
-    description: 'This poster was for a joint effort between the three big music clubs at UVA to put together an acoustic jam for the new Contemplative Commons building that had recently been opened to the students. \n\nThe building itself is very open-air, so I decided to reflect that in the poster.',
+    description: 'This poster was for a joint effort between the three big music clubs at UVA to put together an acoustic jam for the new Contemplative Commons building that had recently been opened to the students. The building itself is very open-air, so I decided to reflect that in the poster.',
     initialRotate: -5 
   },
   { 
@@ -90,9 +92,9 @@ const designItems: DesignItem[] = [
     className: 'des6', 
     src: urec_5, 
     alt: 'house show poster', 
-    title: 'House Show Series',
-    subtitle: 'Poster Series • 2024',
-    description: 'Part of an ongoing poster series created with digital vectors and distressed textures.',
+    title: 'House Show',
+    subtitle: 'Photoshop • 2026',
+    description: 'This poster was created for a house show put on by the UVA music club University Records. Two of my good friends\' bands were playing this show, so I wanted the poster to be memorable. It was with this poster that I started to latch onto using low-resolution graphics as a means of generating contrast.',
     initialRotate: -5 
   },
   { 
@@ -100,9 +102,9 @@ const designItems: DesignItem[] = [
     className: 'des7', 
     src: nocomp_2, 
     alt: 'band poster', 
-    title: 'Band Poster No. 2',
-    subtitle: 'Band Merch & Advertising • 2024',
-    description: 'Event poster designed for live venue promotion featuring multi-layered visual motifs.',
+    title: 'No Composure No. 1',
+    subtitle: 'Photoshop • 2025',
+    description: 'This is one of many posters I have created for my band No Composure. We rarely get good photography of our drummer since she\'s typically behind the rest of the band. That being said, this poster stands out among the rest of the band\'s advertisements.',
     initialRotate: 2 
   },
   { 
@@ -110,9 +112,9 @@ const designItems: DesignItem[] = [
     className: 'des8', 
     src: urec_6, 
     alt: 'house show poster', 
-    title: 'House Show Variant',
-    subtitle: 'Digital Media • 2024',
-    description: 'Alternative colorway and typographic layout experiment.',
+    title: 'Evil House Show',
+    subtitle: 'Photoshop • 2024',
+    description: 'This poster was made for a house show put on by the UVA music club University Records. I wanted to create something grimy and gritty, but not outwardly unsettling. To that effect, I chose the unconventional color scheme of yellow and pink.\n\n This poster was heavily, heavily inspired by the amazing graphic design found in the tabletop role-playing game MÖRK BORG.',
     initialRotate: -4 
   },
   { 
@@ -120,19 +122,19 @@ const designItems: DesignItem[] = [
     className: 'des9', 
     src: nocomp_1, 
     alt: 'band poster', 
-    title: 'Band Poster No. 1',
-    subtitle: 'Band Merch • 2024',
-    description: 'High-density typographic study exploring structural symmetry and visual weight.',
+    title: 'No Composure No. 2',
+    subtitle: 'Photoshop • 2025',
+    description: 'This is one of many posters I have created for my band No Composure. This poster in particular is distinct because we needed to advertise two separate gigs with one poster. To that end, I chose to split the composition evenly down the middle and stick to black and white for contrast between the two halves.',
     initialRotate: -3 
   },
   { 
     id: 'des10', 
     className: 'des10', 
-    src: urec_8, 
-    alt: 'house show poster', 
-    title: 'House Show Flyer',
-    subtitle: 'Print Media • 2024',
-    description: 'Limited run flyer design showcasing printmaking textures.',
+    src: single_cover, 
+    alt: 'single cover', 
+    title: 'Cups and Plates',
+    subtitle: 'Photoshop, Illustrator • 2026',
+    description: 'The single cover for my band\'s debut track on streaming services. This design went through many, many revisions, but throughout them all the motifs of travel, distance, and household appliances remained.',
     initialRotate: 3 
   },
   { 
@@ -140,11 +142,21 @@ const designItems: DesignItem[] = [
     className: 'des11', 
     src: urec_4, 
     alt: 'acoustic show poster', 
-    title: 'Acoustic Session',
-    subtitle: 'Poster Design • 2024',
-    description: 'Monochromatic poster design focusing on structural line quality and negative space.',
+    title: 'Acoustic Show',
+    subtitle: 'Illustrator, Photoshop • 2026',
+    description: 'This poster was made for an acoustic show put on by the UVA music club University Records. At the time, I was really interested with how much I could use a vibrant color palette without making the composition truly eye-straining. In hindsight, the figure looks a litle bit like a Lego figure.',
     initialRotate: 3 
   },
+  {
+    id: 'des12',
+    className: 'des12',
+    src: ep_cover,
+    alt: 'ep cover', 
+    title: 'Everything Happens',
+    subtitle: 'Photoshop • 2026',
+    description: 'The cover for my band\'s debut EP. This interstate bypass is off of I-64 on the way to Richmond, Virginia where the EP was recorded.',
+    initialRotate: 3 
+  }
 ];
 
 export default function DesignGallery(): React.JSX.Element {
