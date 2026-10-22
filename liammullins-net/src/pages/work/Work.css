@@ -367,8 +367,8 @@
     color: var(--dot-default-color);
     background-color: var(--dot-default-color);
     position: absolute;
-    top: 1vw;
-    left: -5vw;
+    top: 0vw;
+    left: -3vw;
     width: 40vw;
     rotate: 0deg;
 }
@@ -389,8 +389,30 @@
     color: var(--dot-default-color);
     background-color: var(--dot-default-color);
     position: absolute;
-    top: -10vw;
+    top: 10vw;
     left: 40vw;
-    width: 20vw;
+    width: 30vw;
+    rotate: 9deg;
+}
+
+.gam4
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 27vw;
+    left: 8vw;
+    width: 28vw;
     rotate: 12deg;
+}
+
+.gam5
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 36vw;
+    left: 39vw;
+    width: 20vw;
+    rotate: 3deg;
 }
