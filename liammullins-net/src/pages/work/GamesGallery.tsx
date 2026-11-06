@@ -106,7 +106,7 @@ const gameItems: GameItem[] = [
         <br/><br/>
         <i>Spectrum</i> is a puzzle platformer that I naively extended from a small tutorial project into a full-fledged game. The main mechanic was directly inspired by Flip-Swap Galaxy in <i>Super Mario Galaxy 2</i>, where red and blue platforms switch collision to a musical beat. In this game I extended this concept to entities instead of just the environment. 
         <br></br><br></br>
-        Although I wish I hadn't spent as much time on it as I did, it taught me about scope creep the hard way. I might revisit the main mechanic at some point in the future now that I have the proper skills and vision to do the concept justice. There are plenty of design and mechanical issues in this game. It's been rewarding to revisit it myself and properly identify where the game could've been improved.
+        Although I wish I hadn't spent as much time on it as I did, it taught me about scope creep the hard way. I might revisit the main mechanic at some point in the future now that I have the proper skills and vision to do the concept justice; Regrettably, there are plenty of design and mechanical issues in this game, but it's been rewarding to revisit it myself and properly identify where the game could've been improved.
       </>
     ),
     initialRotate: -5

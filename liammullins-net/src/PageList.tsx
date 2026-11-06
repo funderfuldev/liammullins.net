@@ -10,7 +10,7 @@ export default function PageList() {
     const PAGES = [
     {key: 1, name: "work", description: "design,   prints,   games", link: "/"},
     {key: 2, name: "about", description: "bio, artist statement", link: "/about"},
-    {key:3, name: "contact", description: "email, socials, cv", link: "/contact"}
+    {key:3, name: "contact", description: "email, socials, resume", link: "/contact"}
   ];
 
   let navigate = useNavigate();

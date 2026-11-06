@@ -34,9 +34,9 @@ export default function Contact() {
                     <p className='pageBody'>For non-serious, infrequent updates, artwork, and strange thoughts, follow my <a href='https://x.com/_Funderful' target="_blank" rel="noopener noreferrer"><u>twitter</u></a> account.</p>
                 </div>
 
-                <p className='pageHeaderText'><b>curriculum vitae</b>
+                <p className='pageHeaderText'><b>resume</b>
                 <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-                <p className='pageHeaderSubtext'></p>
+                <p className='pageHeaderSubtext'>the one-pager</p>
                 </p>
                 <div style={{height: '9vw'}}></div>
                 <a href='https://www.google.com' target='_blank' rel='noopener noreferrer'>
@@ -44,7 +44,7 @@ export default function Contact() {
                 whileHover={{scaleX: 1.01, scaleY: 0.99, backgroundColor: '(0.1,0.1,0.1)'}}
                 whileTap={{ scaleX: 1.1, scaleY: 0.9, transition: { type: 'spring', stiffness: 1000, damping: 35, mass: 2 } }}
                 transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
-                className='cvButton'><u>Open CV in new tab</u></motion.button></a>
+                className='cvButton'><u>Open resume in new tab</u></motion.button></a>
             </div>
         </motion.div>
     )

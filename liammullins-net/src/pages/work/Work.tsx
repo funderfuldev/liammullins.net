@@ -45,13 +45,6 @@ export default function Work() {
 
             <GamesGallery/>
 
-            <div className='pageHeaderContainer'>
-                <p className='pageHeaderText'><b>digital</b>
-                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-                <p className='pageHeaderSubtext'>miscellaneous personal work</p>
-                </p>
-                <div style={{height: '8vw'}}></div>
-            </div>
         </motion.div>
     )
 }

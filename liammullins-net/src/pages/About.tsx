@@ -16,7 +16,7 @@ export default function About() {
             <div className='pageHeaderContainer'>
                 <p className='pageHeaderText'><b>biography</b>
                 <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-                <p className='pageHeaderSubtext'>printer, baker, candlestick maker</p>
+                <p className='pageHeaderSubtext'>printer, baker, videogame maker</p>
                 </p>
                 <div style={{height: '8vw'}}></div>
                 <div style={{rotate: '-0deg'}}>
@@ -62,13 +62,18 @@ export default function About() {
                     <div style={{height: '0vw'}}></div>
                     <p className='pageBody'>Most of my printed work is made through multi-block linocut printing, although some pieces are created through steel plate etching. All of my digital work is creating using Adobe's Creative Suite.</p>
                 </div>
+
+                <div style={{height: '10vw'}}></div>
+
+                <p className='pageHeaderText'><b>this website</b>
+                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p className='pageHeaderSubtext'>personal website or portfolio?</p>
+                </p>
+                <div style={{height: '8vw'}}></div>
+                <div style={{rotate: '-0deg'}}>
+                    <p className='pageBody'>This is my very first website that I have created from scratch. While making it, I had a dual purpose: I wanted to simulatenously house my work for professional purposes <i>and</i> keep it stylized in a way that reflects my personal aesthetic. To that end, I chose to keep the color and design minimalist. To offset that, I also made everything a little off-kilter (metaphorically and literally) to help illustrate a bit of my personal style. My hope is for people to enjoy exploring the website à la Web 2.0 while keeping it meaningfully professional.</p>
+                </div>
             </div>
-
-
-
-            
-            
-            
         </motion.div>
     )
 }
