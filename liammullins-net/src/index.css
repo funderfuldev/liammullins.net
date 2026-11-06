@@ -36,6 +36,8 @@ body, #root {
   padding: 0;
 }
 
+
+
 .bottomSpacer
 {
   height: 30vw;
@@ -85,5 +87,10 @@ html, body {
   .pageContainer
   {
     margin-left: 1vw;
+  }
+
+  .spacer
+  {
+    height: 0vw;
   }
 }

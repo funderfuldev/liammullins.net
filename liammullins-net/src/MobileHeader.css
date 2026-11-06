@@ -11,8 +11,8 @@
 .headerImage
 {
     width: 129vw;
-    margin-left: -2vw;
-    margin-top: -5vh;
+    margin-left: 16vw;
+    margin-top: -10vh;
     rotate: -5deg;
 }
 
@@ -25,7 +25,7 @@
     width: 100%;
     box-sizing: border-box;
     rotate: -5deg;
-    margin-top: 0.5vh;
+    margin-top: 0.8vh;
 }
 
 

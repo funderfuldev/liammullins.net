@@ -4,22 +4,10 @@ import Header from './Header.tsx';
 import Footer from './Footer.tsx';
 import React from 'react'
 
-import { useState, useEffect } from 'react';
 import { useLocation, useOutlet } from 'react-router';
 import { AnimatePresence } from 'motion/react';
 import MobileHeader from './MobileHeader.tsx';
-
-function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  return isMobile;
-}
+import useIsMobile from './hooks/useIsMobile.ts';
 
 export default function App() 
 {
