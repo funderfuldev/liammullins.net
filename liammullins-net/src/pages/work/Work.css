@@ -416,3 +416,47 @@
     width: 20vw;
     rotate: 3deg;
 }
+
+.gam6
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 48vw;
+    left: 15vw;
+    width: 20vw;
+    rotate: 3deg;
+}
+
+.gam7
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: -2vw;
+    left: 62vw;
+    width: 10vw;
+    rotate: 3deg;
+}
+
+.gam8
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 56vw;
+    left: 37vw;
+    width: 15vw;
+    rotate: 5deg;
+}
+
+.gam9
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 68vw;
+    left: 20vw;
+    width: 15vw;
+    rotate: 0deg;
+}
