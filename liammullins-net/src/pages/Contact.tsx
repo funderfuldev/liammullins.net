@@ -1,51 +1,8 @@
-
-import './Pages.css'
-import {motion} from 'motion/react'
+import useIsMobile from '../hooks/useIsMobile';
+import ContactDesktop from './ContactDesktop';
+import ContactMobile from './ContactMobile';
 
 export default function Contact() {
-
-    return (
-        <motion.div
-        initial={{opacity: 0, y: 25}}
-        animate={{opacity: 1, y: 0}}
-        transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
-        >
-            <div className='pageHeaderContainer'>
-                <p className='pageHeaderText'><b>professional</b>
-                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-                <p className='pageHeaderSubtext'>serious things</p>
-                </p>
-                <div style={{height: '8vw'}}></div>
-                <div style={{rotate: '-0deg'}}>
-                    <p className='pageBody'>For professional inquiries, please contact me via <u><a href='mailto:0liammullins0@gmail.com' target="_blank" rel="noopener noreferrer">email</a></u> at <a href='mailto:0liammullins0@gmail.com' target="_blank" rel="noopener noreferrer"><u>0liammullins0@gmail.com.</u></a> I am currently available for freelance work and commissions.</p>
-                <div style={{height: '0vw'}}></div> 
-                </div>
-
-                <p className='pageHeaderText'><b>socials</b>
-                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-                <p className='pageHeaderSubtext'>the less serious things</p>
-                </p>
-                <div style={{height: '8vw'}}></div>
-                <div style={{rotate: '-0deg'}}>
-                    <p className='pageBody'>For updates on my printed work, digital projects, and miscellaneous sketches/artwork, follow me on my art <a href='https://www.instagram.com/liammullins.psd/' target="_blank" rel="noopener noreferrer"><u>instagram.</u></a> I try to post updates semi-frequently.</p>
-                    <div style={{height: '0vw'}}></div>
-                    <p className='pageBody'>If you would like to play some of my games or follow my development progress, feel free to check out my <a href='https://funderful.itch.io/' target="_blank" rel="noopener noreferrer"><u>itch.io</u></a> page.</p>
-                    <div style={{height: '0vw'}}></div>
-                    <p className='pageBody'>For non-serious, infrequent updates, artwork, and strange thoughts, follow my <a href='https://x.com/_Funderful' target="_blank" rel="noopener noreferrer"><u>twitter</u></a> account.</p>
-                </div>
-
-                <p className='pageHeaderText'><b>resume</b>
-                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-                <p className='pageHeaderSubtext'>the one-pager</p>
-                </p>
-                <div style={{height: '9vw'}}></div>
-                <a href='https://www.google.com' target='_blank' rel='noopener noreferrer'>
-                <motion.button 
-                whileHover={{scaleX: 1.01, scaleY: 0.99, backgroundColor: '(0.1,0.1,0.1)'}}
-                whileTap={{ scaleX: 1.1, scaleY: 0.9, transition: { type: 'spring', stiffness: 1000, damping: 35, mass: 2 } }}
-                transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
-                className='cvButton'><u>Open resume in new tab</u></motion.button></a>
-            </div>
-        </motion.div>
-    )
+  const isMobile = useIsMobile();
+  return isMobile ? <ContactMobile /> : <ContactDesktop />;
 }

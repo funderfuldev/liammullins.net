@@ -1,7 +1,6 @@
 import { aboutContent } from './content/aboutContent';
 import './PagesMobile.css'
 import headShotImage from '../assets/images/about/headshot.webp';
-import guitarImage from '../assets/images/about/guitar.webp';
 
 import {motion} from 'motion/react';
 
