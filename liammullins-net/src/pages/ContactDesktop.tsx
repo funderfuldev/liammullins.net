@@ -44,7 +44,7 @@ export default function ContactDesktop() {
                 whileHover={{scaleX: 1.01, scaleY: 0.99, backgroundColor: '(0.1,0.1,0.1)'}}
                 whileTap={{ scaleX: 1.1, scaleY: 0.9, transition: { type: 'spring', stiffness: 1000, damping: 35, mass: 2 } }}
                 transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
-                className='cvButton'><u>Open resume in new tab</u></motion.button></a>
+                className='cvButton'><u>open resume in new tab</u></motion.button></a>
             </div>
         </motion.div>
     )

@@ -122,11 +122,11 @@
     .cvButton
     {
         font-family: 'Georgia';
-        font-size: clamp(1.2rem, 1vw, 1.5rem);
+        font-size: 1rem;
         letter-spacing: -0.05em;
         text-align: left;
-        width: 30vw;
-        padding: 1vw 1vw;
+        width: auto;
+        padding: 1vw 3vw;
         background-color: black;
         color: white;
         border: none;
