@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 interface AboutContent {
   biography: { subtitle: string; paragraphs: ReactNode[] };
   artistStatement: { subtitle: string; paragraphs: ReactNode[] };
-  thisWebsite: { subtitle: string; paragraphs: ReactNode[] };
+  thisWebsite: { subtitle: string; paragraphs: ReactNode[], mobileBlurb: ReactNode[], desktopBlurb: ReactNode[]};
 }
 
 export const aboutContent: AboutContent = {
@@ -24,7 +24,13 @@ export const aboutContent: AboutContent = {
   thisWebsite: {
     subtitle: 'personal website or portfolio?',
     paragraphs: [
-      <>This is my very first website that I have created from scratch. While making it, I had a dual purpose: I wanted to simulatenously house my work for professional purposes <i>and</i> keep it stylized in a way that reflects my personal aesthetic. To that end, I chose to keep the color and design minimalist. To offset that, I also made everything a little off-kilter (metaphorically and literally) to help illustrate a bit of my personal style. My hope is for people to enjoy exploring the website à la Web 2.0 while keeping it meaningfully professional.</>,
+      <>This is my very first website, ever. I created it from scratch in React, a framework I had never touched prior to this project. None of the code for this project was written by AI, although I had to consult the internet for bug fixes very frequently. While making it, I had a dual purpose: I wanted to simulatenously house my work for professional purposes <i>and</i> keep it stylized in a way that reflects my personal aesthetic. To that end, I chose to keep the color and design minimalist. To offset that, I also made everything a little off-kilter (metaphorically and literally) to help illustrate a bit of my personal style. My hope is for people to enjoy exploring the website à la Web 2.0 while keeping it meaningfully professional.</>,
     ],
+  mobileBlurb: [
+    <>Right now you're viewing the <b>mobile version</b> of the website, by the way. A lot of the design-heavier pages (like the <i>work</i> page) look completely different on desktop. I also had to limit a lot of the React Motion animations on the mobile version to avoid a lot of bugs I was running into. The content of the two versions are identical, but the desktop version is my ideal presentation.</>
+  ],
+  desktopBlurb: [
+    <>Right now you're viewing the <b>desktop version</b> of the website, by the way. A lot of the design-heavier pages (like the <i>work</i> page) simply didn't translate to mobile directly, so the layout of all the pages on the website have a separate mobile layout. I also had to limit a lot of the React Motion animations on the mobile version to avoid a lot of bugs I was running into. The content of the two versions are identical, but the desktop version is my ideal presentation.</>
+  ]
   },
 };

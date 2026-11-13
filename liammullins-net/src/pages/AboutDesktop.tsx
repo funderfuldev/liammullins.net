@@ -72,6 +72,7 @@ export default function AboutDesktop() {
                 <div style={{height: '8vw'}}></div>
                 <div style={{rotate: '-0deg'}}>
                     <p className='pageBody'>{aboutContent.thisWebsite.paragraphs[0]}</p>
+                    <p className='pageBody'>{aboutContent.thisWebsite.desktopBlurb[0]}</p>
                 </div>
             </div>
         </motion.div>
