@@ -11,37 +11,45 @@ export default function AboutMobile() {
         animate={{opacity: 1, y: 0}}
         transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
         >
+            <div style={{height: '10vw'}}></div>
+
+
             <div className='pageHeaderContainer'>
-                <p className='pageHeaderText'><b>biography</b>
-                <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-                <p className='pageHeaderSubtext'>{aboutContent.biography.subtitle}</p>
-                </p>
-                <div style={{height: '8vw'}}></div>
-                <div style={{rotate: '-0deg'}}>
+                <div className='pageHeaderText'><b>biography</b>
+                    <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                    <p className='pageHeaderSubtext'>{aboutContent.biography.subtitle}</p>
                     <p className='pageBody'>{aboutContent.biography.paragraphs[0]}</p>
                 </div>
+            </div>
+            
+            <div style={{height: '20rem'}}></div>
 
-
-                <p className='pageHeaderText'><b>artist statement</b>
+            <div className='pageHeaderContainer'>
+                <div className='pageHeaderText'><b>artist statement</b>
                 <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                 <p className='pageHeaderSubtext'>{aboutContent.artistStatement.subtitle}</p>
-                </p>
-                <div style={{height: '8vw'}}></div>
+                </div>
+                <div style={{height: '2rem'}}></div>
                 <div style={{rotate: '-0deg'}}>
                     <p className='pageBody'>{aboutContent.artistStatement.paragraphs[0]}</p>
                     <div style={{height: '0vw'}}></div>
-                    <p className='pageBody'>{aboutContent.artistStatement.paragraphs[1]}</p>
-                    <div style={{height: '0vw'}}></div>
-                    <p className='pageBody'>{aboutContent.artistStatement.paragraphs[2]}</p>
                 </div>
+            </div>
 
-                <div style={{height: '10vw'}}></div>
+            <div className='bodyWrapper'>
+                <p className='pageBody'>{aboutContent.artistStatement.paragraphs[1]}</p>
+                <div style={{height: '0vw'}}></div>
+                <p className='pageBody'>{aboutContent.artistStatement.paragraphs[2]}</p>
+            </div>
 
-                <p className='pageHeaderText'><b>this website</b>
+            <div style={{height: '3rem'}}></div>
+
+            <div className='pageHeaderContainer'>
+                <div className='pageHeaderText'><b>this website</b>
                 <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                 <p className='pageHeaderSubtext'>{aboutContent.thisWebsite.subtitle}</p>
-                </p>
-                <div style={{height: '8vw'}}></div>
+                </div>
+                <div style={{height: '2rem'}}></div>
                 <div style={{rotate: '-0deg'}}>
                     <p className='pageBody'>{aboutContent.thisWebsite.paragraphs[0]}</p>
                 </div>

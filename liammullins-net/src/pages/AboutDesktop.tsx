@@ -14,10 +14,10 @@ export default function AboutDesktop() {
         transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
         >
             <div className='pageHeaderContainer'>
-                <p className='pageHeaderText'><b>biography</b>
+                <div className='pageHeaderText'><b>biography</b>
                 <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                 <p className='pageHeaderSubtext'>{aboutContent.biography.subtitle}</p>
-                </p>
+                </div>
                 <div style={{height: '8vw'}}></div>
                 <div style={{rotate: '-0deg'}}>
                     <p className='pageBody'>{aboutContent.biography.paragraphs[0]}</p>
@@ -46,14 +46,14 @@ export default function AboutDesktop() {
                         transition={{ type: 'spring', stiffness: 500, damping: 50, mass: 1 }}
                         src={guitarImage} alt='guitar' className='guitarImage'></motion.img>
                     </div>
-                    
-                    <div style={{height: '10vw'}}></div> 
                 </div>
 
-                <p className='pageHeaderText'><b>artist statement</b>
+                <div style={{height: '8vw'}}></div>
+
+                <div className='pageHeaderText'><b>artist statement</b>
                 <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                 <p className='pageHeaderSubtext'>{aboutContent.artistStatement.subtitle}</p>
-                </p>
+                </div>
                 <div style={{height: '8vw'}}></div>
                 <div style={{rotate: '-0deg'}}>
                     <p className='pageBody'>{aboutContent.artistStatement.paragraphs[0]}</p>
@@ -65,10 +65,10 @@ export default function AboutDesktop() {
 
                 <div style={{height: '10vw'}}></div>
 
-                <p className='pageHeaderText'><b>this website</b>
+                <div className='pageHeaderText'><b>this website</b>
                 <p className='pageHeaderDash'>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                 <p className='pageHeaderSubtext'>{aboutContent.thisWebsite.subtitle}</p>
-                </p>
+                </div>
                 <div style={{height: '8vw'}}></div>
                 <div style={{rotate: '-0deg'}}>
                     <p className='pageBody'>{aboutContent.thisWebsite.paragraphs[0]}</p>
