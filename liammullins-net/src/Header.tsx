@@ -6,12 +6,17 @@ import './Header.css'
 import Title from "./Title.tsx";
 import PageList from "./PageList.tsx";
 
+
+
 export default function Header() {
+
+
 
     return (
         <div className='rotation'>
           <div className='header'>
 
+            
             <motion.span
             initial={{y: '-10vw', opacity: 0, lineHeight: '50%'}}
             animate={{y: 0, opacity: 1, lineHeight: '75%'}}

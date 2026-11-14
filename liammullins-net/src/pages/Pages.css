@@ -1,0 +1,131 @@
+
+.pageHeaderContainer
+{
+    position: relative;
+    transform-origin: top left;
+    rotate: -5deg;
+    z-index: 0;
+}
+
+.pageHeaderText
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 4vw;
+    font-family: 'Georgia';
+    letter-spacing: -0.3vw;
+    margin-bottom: -10vw;
+    z-index: 2;
+}
+
+.pageHeaderDash
+{
+    position: relative;
+    margin-top: -1.4vw;
+    color: var(--dot-default-color);
+    letter-spacing: 0.05vw;
+    font-size: 2vw;
+    margin-left: -0.15vw;
+    z-index: -2;
+    user-select: none;
+}
+
+.pageHeaderSubtext
+{
+    margin-top: -2.8vw;
+    font-size: 1.5vw;
+    letter-spacing: -0.05em;
+    color: var(--dot-default-color);
+}
+
+.pageBody
+{
+    font-family: 'Georgia';
+    font-size: clamp(1.2rem, 1vw, 1.5rem);
+    letter-spacing: -0.05em;
+    max-width: 40vw;
+}
+
+.pageBody a, 
+.pageBody a:link, 
+.pageBody a:visited, 
+.pageBody a:active
+{
+    color: blue !important;
+}
+
+.biographyPhotos
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1vw;
+    user-select: none;
+}
+
+.headShotImageHolder
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: relative;
+    width: 20vw;
+    height: auto;
+}
+
+.headShotImage
+{
+    width: 20vw;
+    height: auto;
+    box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.guitarImageHolder
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: relative;
+    width: 10vw;
+    height: auto;
+}
+
+.guitarImage
+{
+    width: 10vw;
+    height: auto;
+    box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.cvButton
+{
+    font-family: 'Georgia';
+    font-size: clamp(1.2rem, 1vw, 1.5rem);
+    letter-spacing: -0.05em;
+    text-align: left;
+    width: 30vw;
+    padding: 1vw 1vw;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.imageGallery {
+    column-count: 3;
+    column-gap: 1vw;
+    width: 100%;
+}
+
+.imageGallery img {
+    width: 25vw;
+    height: auto;
+    display: block;
+    margin-bottom: 10vw;
+    break-inside: avoid;
+}

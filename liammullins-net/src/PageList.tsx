@@ -4,18 +4,19 @@ import './Header.css';
 import {useState, useEffect} from "react";
 import { useNavigate, useLocation} from 'react-router';
 import {motion} from "motion/react";
+import useIsMobile from './hooks/useIsMobile.ts';
 
 export default function PageList() {
 
     const PAGES = [
     {key: 1, name: "work", description: "design,   prints,   games", link: "/"},
     {key: 2, name: "about", description: "bio, artist statement", link: "/about"},
-    {key:3, name: "contact", description: "email, socials, cv", link: "/contact"}
+    {key:3, name: "contact", description: "email, socials, resume", link: "/contact"}
   ];
 
   let navigate = useNavigate();
   let location = useLocation();
-
+  const isMobile = useIsMobile();
   const getCurrentPage = () => {
     return PAGES.find(p => p.link === location.pathname) || PAGES[0];
   }
@@ -30,18 +31,6 @@ export default function PageList() {
     setSelectedPage(page);
     navigate(page.link);
   }
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const selectedHeight = isMobile ? '12vw' : '5vw';
   const defaultHeight = isMobile ? '7vw' : '3.2vw';

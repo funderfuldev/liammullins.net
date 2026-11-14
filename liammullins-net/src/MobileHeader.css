@@ -1,0 +1,47 @@
+
+.holder
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.headerImage
+{
+    width: 129vw;
+    margin-left: 16vw;
+    margin-top: -5vh;
+    rotate: -5deg;
+}
+
+.pageButtonsHolderMobile
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+    rotate: -5deg;
+    margin-top: 0.8vh;
+}
+
+
+.pageButtonMobile
+{
+    display: block;
+    font-family: 'Georgia';
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: -0.05rem;
+    margin-right: -1vw;
+    margin-left: -1vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    flex: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,462 @@
+.lightboxBackdrop 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.884);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 3vw;
+    box-sizing: border-box;
+    touch-action: none;
+}
+
+.lightboxContentContainer 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    max-width: 85vw;
+    max-height: 85vh;
+}
+
+.lightboxImageHolder 
+{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 50vw;
+}
+
+.lightboxImage 
+{
+    max-width: 50vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    user-select: none;
+}
+
+.lightboxTextContainer 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 25vw;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+}
+
+.lightboxTitle 
+{
+    font-size: 4vw;
+    font-family: 'Georgia';
+    letter-spacing: -0.3vw;
+    line-height: 75%;
+    margin: 0 0 0.5vw 0;
+    font-weight: bold;
+    white-space: pre-line;
+}
+
+.lightboxSubtitle 
+{
+    font-size: 1.5vw;
+    letter-spacing: -0.05em;
+    color: var(--dot-default-color);
+    margin: 0 0 1.5vw 0;
+}
+
+.lightboxDescription 
+{
+    color: var(--dot-default-color);
+    font-family: 'Georgia';
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    letter-spacing: -0.05em;
+    margin: 0 0 2vw 0;
+    white-space: pre-line;
+}
+
+.lightboxDescription a,
+.lightboxDescription a:visited,
+.lightboxDescription a:active
+{
+    color: white;
+}
+
+.lightboxCloseButton 
+{
+    background: transparent;
+    border: 1px solid var(--dot-default-color);
+    color: var(--dot-default-color);
+    padding: 0.6vw 1.2vw;
+    text-align: left;
+    padding-right: 100vw;
+    font-family: 'Georgia';
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    letter-spacing: -0.05em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lightboxCloseButton:hover 
+{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.designGallery
+{
+    display: relative;
+    width: 50vw;
+    height: 80vw;
+    z-index: 5;
+}
+
+.image
+{
+    position: relative;
+    size: inherit;
+    width: inherit;
+    box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+    user-select: none;
+}
+
+.des1
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 1vw;
+    left: 0vw;
+    width: 20vw;
+}
+
+.des2
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 4vw;
+    left: 22vw;
+    width: 15vw;
+}
+
+.des3
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 25vw;
+    left: 29vw;
+    width: 12vw;
+    rotate: 7deg;
+}
+
+.des4
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: -5vw;
+    left: 41vw;
+    width: 25vw;
+    rotate: 10deg;
+}
+
+.des5
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 28vw;
+    left: 8vw;
+    width: 17vw;
+    rotate: 6deg;
+}
+
+.des6
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 29vw;
+    left: -6vw;
+    width: 12vw;
+}
+
+.des7
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 30vw;
+    left: 42vw;
+    width: 28vw;
+    rotate: 10deg;
+}
+
+.des8
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 42vw;
+    left: 27vw;
+    width: 10vw;
+}
+
+.des9
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 18vw;
+    left: 67vw;
+    width: 10vw;
+    rotate: 8deg;
+}
+
+.des10
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 17vw;
+    left: -12vw;
+    width: 10vw;
+    rotate: -5deg;
+}
+
+.des11
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 51vw;
+    left: 39vw;
+    width: 22vw;
+    rotate: 0deg;
+}
+
+.des12
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 53vw;
+    left: 64vw;
+    width: 10vw;
+    rotate: 6deg;
+}
+
+
+.printsGallery
+{
+    display: relative;
+    height: 80vw;
+}
+
+.pri1
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 2vw;
+    left: -10vw;
+    width: 50vw;
+    rotate: 0deg;
+}
+
+.pri2
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: -6vw;
+    left: 45vw;
+    width: 15vw;
+    rotate: 10deg;
+}
+
+.pri3
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 28vw;
+    left: 25vw;
+    width: 25vw;
+    rotate: 4deg;
+}
+
+.pri4
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 27vw;
+    left: 7vw;
+    width: 15vw;
+    rotate: 2deg;
+}
+
+.pri5
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 17vw;
+    left: 43vw;
+    width: 15vw;
+    rotate: 2deg;
+}
+
+.pri6
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 30vw;
+    left: 53vw;
+    width: 20vw;
+    rotate: 2deg;
+}
+
+.pri7
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 50vw;
+    left: 25vw;
+    width: 12vw;
+    rotate: 2deg;
+}
+
+.pri8
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 41vw;
+    left: 1vw;
+    width: 20vw;
+    rotate: -2deg;
+}
+
+.gamesGallery
+{
+    display: relative;
+    height: 80vw;
+}
+
+.gam1
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 0vw;
+    left: -3vw;
+    width: 40vw;
+    rotate: 0deg;
+}
+
+.gam2
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: -10vw;
+    left: 40vw;
+    width: 20vw;
+    rotate: 12deg;
+}
+
+.gam3
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 10vw;
+    left: 40vw;
+    width: 30vw;
+    rotate: 9deg;
+}
+
+.gam4
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 27vw;
+    left: 8vw;
+    width: 28vw;
+    rotate: 12deg;
+}
+
+.gam5
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 36vw;
+    left: 39vw;
+    width: 20vw;
+    rotate: 3deg;
+}
+
+.gam6
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 48vw;
+    left: 15vw;
+    width: 20vw;
+    rotate: 3deg;
+}
+
+.gam7
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: -2vw;
+    left: 62vw;
+    width: 10vw;
+    rotate: 3deg;
+}
+
+.gam8
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 56vw;
+    left: 37vw;
+    width: 15vw;
+    rotate: 5deg;
+}
+
+.gam9
+{
+    color: var(--dot-default-color);
+    background-color: var(--dot-default-color);
+    position: absolute;
+    top: 66vw;
+    left: 20vw;
+    width: 15vw;
+    rotate: 0deg;
+}
